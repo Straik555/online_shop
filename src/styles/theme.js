@@ -1,10 +1,11 @@
 export default {
     colors: {
-        light: 'white',
-        lightSilver: '#c7c7c7',
-        greenHeader: '#59abb4',
-        titleDark: '#585858',
-        categoryLight: '#b2b4b9',
-        priceGreen: '#499c49',
+        colorWhite: '#FFFFFF',
+        silverLight: '#aaa',
+        borderShadow: '#E7E7E7',
+        colorTitle: '#50a8e1',
+        blackLight: '#373737',
+        dodgerBlue: '#36A0FF',
+
     }
 }

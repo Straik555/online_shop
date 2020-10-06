@@ -1,30 +1,23 @@
 import React from "react";
-import {Switch, Route} from "react-router";
 
 import '../../styles/main.scss'
-import Phones from "../Phones";
 import {
     LayoutBanner,
     LayoutBannerContainer,
     LayoutBannerContainerHeader,
     LayoutContainer
 } from './style';
+import Sidebar from "../../components/Sidebar";
 
-const routes = (
-    <Switch>
-        <Route path='/' component={Phones} exact />
-    </Switch>
-)
-
-const Layout = () => {
+const Layout = ({children}) => {
     return (
         <LayoutBanner>
             <LayoutBannerContainer>
                 <LayoutBannerContainerHeader>
-                        Sorse
+                    <Sidebar />
                 </LayoutBannerContainerHeader>
                 <LayoutContainer>
-                    {routes}
+                    {children}
                 </LayoutContainer>
             </LayoutBannerContainer>
         </LayoutBanner>
